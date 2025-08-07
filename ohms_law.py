@@ -1,14 +1,13 @@
 # ohms_law.py
 
-# Ask the user for current (I) and resistance (R)
 try:
     current = float(input("Enter the current (in A): "))
+    print(f"You entered current: {current} A")
+
     resistance = float(input("Enter the resistance (in ohms): "))
+    print(f"You entered resistance: {resistance} ohms")
 
-    # Calculate voltage using Ohm's Law: V = I * R
     voltage = current * resistance
-
-    # Display the result
     print(f"The voltage is: {voltage} volts")
 
 except ValueError:
